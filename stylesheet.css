@@ -1,0 +1,92 @@
+body {
+    font-family: "Source Sans Pro";
+}
+
+.container-fluid {
+    background-color: #3cd638;
+}
+.navbar .nav li a{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.navbar-toggle{
+    background-color: #fff;
+}
+
+#navbar-logo{
+    position: absolute;
+    height: 45px;
+    left: 50%;
+    margin: -13px -64px;
+}
+
+
+.jumbotron{
+    background-color:#3cd638;
+    margin-top: 20px;
+    text-align: center;
+}
+#jumbotron-logo{
+    width: 50%;
+}
+.jumbotron h1{
+    margin: 15px 15px;
+    font-size: 75px;
+}
+.jumbotron h2{
+    margin: 15px 15px;
+    font-weight: 300;
+}
+
+button:focus{
+    outline: none !important;
+}
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3cd638;
+    margin: 15px 15px;
+    border: solid 2px #fff; 
+    color: #fff;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #3cd638;
+}
+.btn:active{
+    color: #efefef;
+}
+
+#divider{
+    width: 100%;
+    height: 1px;
+    background-color: #c8c8c8;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.carousel-module{
+    text-align: center;
+}
+.carousel-module h3{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.carousel-module-description{
+    font-weight: 300;
+    font-size: 25px;
+    padding: 15px 15px;
+}
+.glyphicon-option-horizontal{
+    font-size: 100px;
+    color: #3cd638;
+}
+.glyphicon-upload{
+    font-size: 100px;
+    color: #3cd638;
+}
+#vote-icon{
+    width: 100px;
+}
