@@ -11,6 +11,7 @@
         <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
 
+        <link rel="icon" href="Images/PickleFavicon.png" type="image/x-icon">
         <title>Pickle App</title>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,36 +21,53 @@
 <![endif]-->
     </head>
     <body>
-        <div class="jumbotron">
-            <img id="jumbotron-logo" src="Pickle%20Text%20Logo.png">
-            <h1>Decide with the world.</h1>
-            <h2>Pickle makes it easy to share and vote on decisions.</h2>
-            <h2>Coming soon for iOS.</h2>
-            <a href=#carousel><button class="btn">Learn More</button></a>
+        <div class="content">
+            <div class="jumbotron">
+                <img id="jumbotron-logo" src="Images/Pickle%20Text%20Logo.png">
+                <h1>Decide with the world.</h1>
+                <h2>Pickle makes it easy to share and vote on decisions.</h2>
+                <h2>Coming soon for iOS.</h2>
+                <a href=#carousel><button class="btn">Learn More</button></a>
+            </div>
+
+            <div class="row" id="carousel">
+                <div class="col-lg-4">
+                    <div class="carousel-module">
+                        <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        <h3>Create.</h3>
+                        <h4 class="carousel-module-description">Create your decision with a description and up to five choices. Each choice can have a caption and either a picture or video.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="carousel-module">
+                        <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+                        <h3>Share.</h3>
+                        <h4 class="carousel-module-description">Share your decision with your followers for fast and easy feedback, and see decisions in your timeline from the people who you follow.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="carousel-module">
+                        <img id="vote-icon" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/Post/Action%20Buttons/Select%20-%20Vote/SelectedIcon.imageset/SelectedIcon.png?raw=true">
+                        <h3>Vote.</h3>
+                        <h4 class="carousel-module-description">Receive votes for the choices in your decision, and scroll through your timeline to vote on your friends' decisions. No one can see what you have voted for, so don't be scared to be honest!</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
         </div>
-                
-        <div class="row" id="carousel">
-            <div class="col-lg-4">
-                <div class="carousel-module">
-                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
-                    <h3>Create.</h3>
-                    <h4 class="carousel-module-description">Create your decision with a description and up to five choices. Each choice can have a caption and either a picture or video.</h4>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="col-sm-4 footer-column">
+                    <a href="mailto:info@getpickleapp.com"><button class="btn footer-item" id="footer-button">info@getpickleapp.com</button></a>
+                </div>
+                <div class="col-sm-4 footer-column footer-image-column">
+                    <img id="footer-logo" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/App%20Icon%20and%20Launch%20Image/AppIcon.appiconset/Icon-60@2x.png?raw=true">
+                </div>
+                <div class="col-sm-4 footer-column">
+                    <p class="footer-item">© 2015 Pickle</p>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="carousel-module">
-                    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
-                    <h3>Share.</h3>
-                    <h4 class="carousel-module-description">Share your decision with your followers for fast and easy feedback, and receive decisions from the people who you follow.</h4>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="carousel-module">
-                    <img id="vote-icon" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/Post/Action%20Buttons/Select%20-%20Vote/SelectedIcon.imageset/SelectedIcon.png?raw=true">
-                    <h3>Vote.</h3>
-                    <h4 class="carousel-module-description">Receive votes for the choices in your decision, and scroll through your timeline to vote on your friends' decisions. No one can see what you have voted for, so don't be scared to be honest!</h4>
-                </div>
-            </div>
-        </div>
+        </footer>
     </body>
 </html>
