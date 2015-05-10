@@ -32,14 +32,22 @@ button:focus{
     background-color: #3cd638;
     margin: 15px 15px;
     border: solid 2px #fff; 
-    color: #fff;
+    color: #fff !important;
 }
 .btn:hover{
-    background-color: #fff;
-    color: #3cd638;
+    color: #fff;
 }
-.btn:active{
-    color: #efefef;
+
+
+@media only screen
+and (min-width: 1200px) {
+    .btn:hover{
+        background-color: #fff;
+        color: #3cd638;
+    }
+    .btn:active{
+        color: #efefef;
+    }
 }
 
 .carousel-module{
