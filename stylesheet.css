@@ -1,6 +1,7 @@
-body {
+html, body {
     font-family: "Source Sans Pro";
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    width: auto !important;
 }
 
 .jumbotron{
@@ -52,7 +53,7 @@ and (min-width: 1200px) {
 @media only screen
 and (max-width:735px) {
     #jumbotron-logo{
-        width: 250px;
+        width: 280px;
     }
 }
 
