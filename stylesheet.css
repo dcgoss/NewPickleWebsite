@@ -36,6 +36,7 @@ button:focus{
 }
 .btn:hover{
     color: #fff;
+    
 }
 
 
@@ -43,7 +44,7 @@ button:focus{
 and (min-width: 1200px) {
     .btn:hover{
         background-color: #fff;
-        color: #3cd638;
+        color: #3cd638 !important;
     }
     .btn:active{
         color: #efefef;
