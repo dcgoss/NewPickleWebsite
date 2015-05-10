@@ -136,9 +136,12 @@ input[type=email]:focus{
     color: #3cd638 !important;
     border: solid 2px #3cd638; 
 }
-#submit-button:hover{
-    background-color: #3cd638;
-    color: #fff !important;
+@media only screen
+and (min-width: 1200px) {
+    #submit-button:hover{
+        background-color: #3cd638;
+        color: #fff !important;
+    }
 }
 
 .gap{
