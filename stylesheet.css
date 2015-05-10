@@ -1,6 +1,7 @@
 html, body {
     font-family: "Source Sans Pro";
-    overflow-x: hidden !important;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     height: 100% !important;
     width: 100% !important;
     min-height: 100%;
