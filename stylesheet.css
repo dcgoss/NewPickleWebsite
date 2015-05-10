@@ -1,43 +1,26 @@
 body {
     font-family: "Source Sans Pro";
+    overflow-x: hidden;
 }
-
-.container-fluid {
-    background-color: #3cd638;
-}
-.navbar .nav li a{
-    font-size: 18px;
-    font-weight: bolder;
-    color: #fff;
-}
-
-.navbar-toggle{
-    background-color: #fff;
-}
-
-#navbar-logo{
-    position: absolute;
-    height: 45px;
-    left: 50%;
-    margin: -13px -64px;
-}
-
 
 .jumbotron{
     background-color:#3cd638;
-    margin-top: 20px;
     text-align: center;
+    width: 100% !important;
+    padding: -15px -15px;
 }
 #jumbotron-logo{
-    width: 50%;
+    width: 350px;
 }
 .jumbotron h1{
     margin: 15px 15px;
+    font-weight: 300;
     font-size: 75px;
+    color: #222;
 }
 .jumbotron h2{
     margin: 15px 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 button:focus{
@@ -59,14 +42,6 @@ button:focus{
     color: #efefef;
 }
 
-#divider{
-    width: 100%;
-    height: 1px;
-    background-color: #c8c8c8;
-    margin-top: -20px;
-    margin-bottom: 30px;
-}
-
 .carousel-module{
     text-align: center;
 }
@@ -75,7 +50,7 @@ button:focus{
     font-size: 40px;
 }
 .carousel-module-description{
-    font-weight: 300;
+    font-weight: 200;
     font-size: 25px;
     padding: 15px 15px;
 }
