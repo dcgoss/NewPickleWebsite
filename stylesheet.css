@@ -46,7 +46,6 @@ button:focus{
 }
 .btn:hover{
     color: #fff;
-    
 }
 
 @media only screen
@@ -88,6 +87,59 @@ and (max-width:735px) {
 }
 #vote-icon{
     width: 100px;
+}
+
+.well{
+    text-align: center;
+}
+.well h3{
+    font-weight: bold;
+}
+.signup-form{
+    position: relative;
+    width: 200px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+}
+.input-group{
+    width: 300px;
+}
+input[type=text]{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus{
+  box-shadow: 0 0 5px #3cd638;
+  border: 1px solid #3cd638;
+}
+input[type=email]{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+    margin-top: 10px;
+}
+ 
+input[type=email]:focus{
+  box-shadow: 0 0 5px #3cd638;
+  border: 1px solid #3cd638;
+}
+#submit-button{
+    background-color: #fff;
+    color: #3cd638 !important;
+    border: solid 2px #3cd638; 
+}
+#submit-button:hover{
+    background-color: #3cd638;
+    color: #fff !important;
 }
 
 .gap{
