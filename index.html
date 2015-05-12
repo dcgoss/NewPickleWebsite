@@ -11,7 +11,7 @@
         <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
 
-        <link rel="icon" href="Images/PickleFavicon.png" type="image/x-icon">
+        <link rel="icon" href="Images/Pickle%20Favicon.png" type="image/x-icon">
         <title>Pickle App</title>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,21 +54,21 @@
                     </div>
                 </div>
             </div>
-            
             <div class="row" id="signup">
                 <div class="well">
                     <h3>Sign up for early access.</h3>
                     <h4>Be one of the first to try Pickle and provide feedback when the beta program launches early summer 2015. Sign up now to reserve one of the limited spots in the program.<br><br> Input your name and email and we will contact you when the beta becomes available.</h4>
-                    <div class="signup-form">
+                    <form id="signup-form">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="First name">
-                            <input type="text" class="form-control" placeholder="Last name">
+                            <input id="First-Name" name="entry.1126922455" type="text" class="form-control" placeholder="First name">
+                            <input id="Last-Name" name="entry.352906697" type="text" class="form-control" placeholder="Last name">
                         </div>
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input id="Email" name="entry.1425258291" type="email" class="form-control" placeholder="Email">
                         </div>
-                        <button class="btn" id="submit-button">Sign Up</button>
-                    </div>
+                        <input type="submit" value="Sign Up" class="btn" id="submit-button"></input>
+                    </form>
+                
                 </div>
             </div>
             <div class="gap"></div>
@@ -80,12 +80,15 @@
                     <a href="mailto:info@getpickleapp.com"><button class="btn footer-item" id="footer-button">info@getpickleapp.com</button></a>
                 </div>
                 <div class="col-sm-4 footer-column footer-image-column">
-                    <img id="footer-logo" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/App%20Icon%20and%20Launch%20Image/AppIcon.appiconset/Icon-60@2x.png?raw=true">
+                    <img id="footer-logo" src="Images/Pickle%20Icon.png">
                 </div>
                 <div class="col-sm-4 footer-column">
                     <p class="footer-item">© 2015 Pickle</p>
                 </div>
             </div>
         </footer>
+        
+        <script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="signup.js" type="text/javascript"></script>
     </body>
 </html>
