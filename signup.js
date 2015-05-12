@@ -1,5 +1,4 @@
 $(document).ready(function() {   
-    alert("ready");
     $('#signup-form').submit(function(event) {
             event.preventDefault();
             postToGoogleForm();
