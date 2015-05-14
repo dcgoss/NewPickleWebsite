@@ -131,16 +131,18 @@ input[type=email]:focus{
   box-shadow: 0 0 5px #3cd638;
   border: 1px solid #3cd638;
 }
-#submit-button{
+#signup-button{
     background-color: #fff;
     color: #3cd638 !important;
     border: solid 2px #3cd638; 
+    outline: none;
 }
 @media only screen
 and (min-width: 1200px) {
-    #submit-button:hover{
+    #signup-button:hover{
         background-color: #3cd638;
         color: #fff !important;
+        outline: none;
     }
 }
 
