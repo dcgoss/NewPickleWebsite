@@ -61,8 +61,8 @@
                     <h4>Be one of the first to try Pickle and provide feedback when the beta program launches early summer 2015. Sign up now to reserve one of the limited spots in the program.<br><br> Input your name and email and we will contact you when the beta becomes available.</h4>
                     <form id="signup-form">
                         <div class="input-group">
-                            <input pattern=".{2,}" oninvalid="this.setCustomValidity('Must enter a minimum of 2 characters for first name.')" id="First-Name" type="text" class="form-control" placeholder="First name" required>
-                            <input pattern=".{2,}" oninvalid="this.setCustomValidity('Must enter a minimum of 2 characters for last name.')" id="Last-Name" type="text" class="form-control" placeholder="Last name" required>
+                            <input pattern=".{2,}" oninvalid="this.setCustomValidity('Must enter a minimum of 2 characters for first name.')" oninput="setCustomValidity('')" id="First-Name" type="text" class="form-control" placeholder="First name" required>
+                            <input pattern=".{2,}" oninvalid="this.setCustomValidity('Must enter a minimum of 2 characters for last name.')" oninput="setCustomValidity('')" id="Last-Name" type="text" class="form-control" placeholder="Last name" required>
                         </div>
                         <div class="input-group">
                             <input required id="Email" type="email" class="form-control" placeholder="Email">
