@@ -1,0 +1,70 @@
+body {
+  background-color: white;
+}
+
+header, h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", "sans-serif";
+  -webkit-font-smoothing: antialiased; // fix for thick fonts on Chrome
+}
+
+h1 {
+  font-weight: bold;
+}
+
+button:focus, button:hover {
+  outline: none !important; // remove blue outline
+  text-decoration: none;
+}
+
+img, button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+.fill-in-white:hover, .fill-in-white:active, .fill-in-white:focus {
+  color: black;
+  background-color: white !important;
+
+  $touchscreen-max-width: 1100px; // threshold for disabling highlights on touchscreens
+  @media screen and (max-width: $touchscreen-max-width) {
+    // don't show highlights on touchscreens
+    color: white;
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.button {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.button-white {
+  @extend .button;
+  color: white;
+  border: 2px solid white !important;
+}
+
+.button-black {
+  @extend .button;
+  color: black;
+  border: 2px solid black !important;
+}
+
+$bootstrap-column-collapse-width: 1000px;
+.stack-item {
+  @media screen and (max-width: $bootstrap-column-collapse-width) {
+    // set spacing for when Bootstrap collapses the buttons into a stack
+    margin-bottom: 20px;
+  }
+}
