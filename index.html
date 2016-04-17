@@ -7,10 +7,12 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <!-- Bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        
         <link href="stylesheet.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
 
+        <link rel="icon" href="Images/Pickle%20Favicon.png" type="image/x-icon">
         <title>Pickle App</title>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,69 +22,76 @@
 <![endif]-->
     </head>
     <body>
-        <nav class="navbar navbar-fixed-top navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img id="navbar-logo" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/Pickle%20Text%20Logo.png?raw=true"></a>
-                </div>
+        <div class="content">
+            <div class="jumbotron">
+                <img id="jumbotron-logo" src="Images/Pickle%20Text%20Logo.png">
+                <h1>Decide with the world.</h1>
+                <h2>Pickle makes it easy to share and vote on decisions.</h2>
+                <h2>Coming soon for iOS.</h2>
+                <a href=#carousel><button class="btn">Learn More</button></a>
+                <a href=#signup><button class="btn">Get Early Access</button></a>
+            </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#carousel">About</a></li>
-                        <li><a href="#">Beta</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                        
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-        
-        <div class="jumbotron">
-            <img id="jumbotron-logo" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/Pickle%20Text%20Logo.png?raw=true">
-            <h1>Decide with the world.</h1>
-            <h2>Pickle makes it easy to share and vote on decisions.</h2>
-            <a href=#carousel><button class="btn">Learn More</button></a>
-            <span id="divider"></span>
-        </div>
+            <div class="row" id="carousel">
+                <div class="col-lg-4">
+                    <div class="carousel-module">
+                        <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        <h3>Create.</h3>
+                        <h4 class="carousel-module-description">Create your decision with a description and up to five choices. Each choice can have a caption and either a picture or video.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="carousel-module">
+                        <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+                        <h3>Share.</h3>
+                        <h4 class="carousel-module-description">Share your decision with your followers for fast and easy feedback, and see decisions in your timeline from the people who you follow.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="carousel-module">
+                        <img id="vote-icon" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/Post/Action%20Buttons/Select%20-%20Vote/SelectedIcon.imageset/SelectedIcon.png?raw=true">
+                        <h3>Vote.</h3>
+                        <h4 class="carousel-module-description">Receive votes for the choices in your decision, and scroll through your timeline to vote on your friends' decisions. No one can see what you have voted for, so don't be scared to be honest!</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="signup">
+                <div class="well">
+                    <h3>Sign up for early access.</h3>
+                    <h4>Be one of the first to try Pickle and provide feedback when the beta program launches early summer 2015. Sign up now to reserve one of the limited spots in the program.<br><br> Input your name and email and we will contact you when the beta becomes available.</h4>
+                    <form id="signup-form">
+                        <div class="input-group">
+                            <input pattern=".{2,}" oninvalid="this.setCustomValidity('Must enter a minimum of 2 characters for first name.')" oninput="setCustomValidity('')" id="First-Name" type="text" class="form-control" placeholder="First name" required>
+                            <input pattern=".{2,}" oninvalid="this.setCustomValidity('Must enter a minimum of 2 characters for last name.')" oninput="setCustomValidity('')" id="Last-Name" type="text" class="form-control" placeholder="Last name" required>
+                        </div>
+                        <div class="input-group">
+                            <input required id="Email" type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <input type="submit" value="Sign Up" class="btn" id="signup-button"></input>
+                    </form>
                 
-        <div class="row" id="carousel">
-            <div class="col-lg-4">
-                <div class="carousel-module">
-                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
-                    <h3>Create.</h3>
-                    <h4 class="carousel-module-description">Create your decision with a description and up to five choices. Each choice can have a caption and either a picture or video.</h4>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="carousel-module">
-                    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
-                    <h3>Share.</h3>
-                    <h4 class="carousel-module-description">Share your decision with your followers for fast and easy feedback, and receive decisions from the people who you follow.</h4>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="carousel-module">
-                    <img id="vote-icon" src="https://github.com/dcgoss/PickleApp/blob/Overhaul/Pickle/Images.xcassets/Post/Action%20Buttons/Select%20-%20Vote/SelectedIcon.imageset/SelectedIcon.png?raw=true">
-                    <h3>Vote.</h3>
-                    <h4 class="carousel-module-description">Receive votes for the choices in your decision, and scroll through your timeline to vote on your friends' decisions. No one can see what you have voted for, so don't be scared to be honest!</h4>
-                </div>
-            </div>
+            <div class="gap"></div>
         </div>
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="col-sm-4 footer-column">
+                    <a href="mailto:info@getpickleapp.com"><button class="btn footer-item" id="footer-button">info@getpickleapp.com</button></a>
+                </div>
+                <div class="col-sm-4 footer-column footer-image-column">
+                    <img id="footer-logo" src="Images/Pickle%20Icon.png">
+                </div>
+                <div class="col-sm-4 footer-column">
+                    <p class="footer-item">© 2015 Pickle</p>
+                </div>
+            </div>
+        </footer>
+        
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="signup.js" type="text/javascript"></script>
     </body>
 </html>
